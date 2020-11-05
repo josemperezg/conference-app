@@ -43,7 +43,7 @@ app.use('/', routes({
   feedback,
 }));
 
-app.use((req, res, next) => next(createError(404, 'File not found')));
+app.use((req, res, next) => next(createError(404, 'File not founded')));
 
 // eslint-disable-next-line no-unused-vars
 app.use((err, req, res, next) => {
